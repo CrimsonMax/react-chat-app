@@ -37,7 +37,7 @@ function Chat({ users, messages, userName, roomId, onAddMessage }) {
       <div className="chat-messages">
         <div ref={messagesRef} className="messages">
           {messages.map((message, index) => (
-            <div key={message + index} className="message">
+            <div key={message + index} className="message" style={{wordbreak: 'break-all'}}>
               <p>{message.text}</p>
               <div>
                 <span>{message.userName}</span>
